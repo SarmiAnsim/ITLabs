@@ -4,7 +4,7 @@
 
 ## ✅ Страница проекта:
 Ссылка на страницу проекта:
-[Проект](https://github.com/SarmiAnsim/ITLabs)
+[НАНОграммчики](https://github.com/SarmiAnsim/ITLabs)
 
 ## ✅ Состав команды:
 
