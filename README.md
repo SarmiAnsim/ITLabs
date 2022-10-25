@@ -4,7 +4,7 @@
 
 ## ✅ Страница проекта:
 Ссылка на страницу проекта:
-[Проект](https://sarmiansim.github.io/ITLabs/)
+[Landing page](https://sarmiansim.github.io/ITLabs/)
 
 ## ✅ Состав команды:
 
