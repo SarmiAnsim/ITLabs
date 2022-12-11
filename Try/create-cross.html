@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<input type="text" id="cWidth" value="5"> <br>
+			<input type="text" id="cHeight" value="5"> <br>
+			<input type="text" id="cName" value="Мой кроссворд"> <br>
+			<button id="crossword-download">
+            	Скачать кроссворд
+        	</button>
+        	<button id="crossword-screenshot-download">
+            	Экспортировать кроссворд
+        	</button>
+			<div class="grid-wrap grid-crossword-screen" style="padding-top: 0px; padding-left: 0px;">
+			    <div class="grid grid--1" style="width: 90px; 
+			    grid-template-rows: 20% 20% 20% 20% 20%; 
+			    grid-template-columns: 20% 20% 20% 20% 20%; 
+			    grid-template-areas: none; height: 90px;">
+			        <div class="grid grid--2" style="width: 0px; height: 0px; left: -18px; grid-template: repeat(5, 20%) / repeat(1, 100%);">
+			        </div>
+			        <div class="grid grid--3" style="width: 90px; height: 0px; top: 0px; grid-template: repeat(1, 100%) / repeat(5, 20%);">
+			        </div>
+			    </div>
+			</div>
+			<div class="crossword-screenshot"></div>
+		</div>
+		<script src="js/html2canvas.js"></script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="js/create-crossword.js"></script>
+	</body>
+</html>

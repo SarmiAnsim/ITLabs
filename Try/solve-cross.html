@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div>
+			<div class="controls mt-3 mb-3">
+				<input type="file" id="file-selector" accept=".crs"> <br>
+        		<button class="btn btn-danger btn-md rounded-0 btn-clean">
+            		<i class="far fa-trash-alt"></i>
+            		Очистить
+        		</button>
+        		<button class="btn btn-primary btn-md rounded-0 btn-save">
+            		<i class="fas fa-save"></i>
+            		Сохранить
+        		</button>
+        		<button class="btn btn-success btn-md rounded-0 btn-check">
+            		<i class="fas fa-check"></i>
+            		Проверить
+        		</button>
+            </div>
+            <div class="grid-wrap" style="width: 0px; height: 0px;">
+        		<div class="grid grid--1" style="width: 90px; 
+			    grid-template-rows: 20% 20% 20% 20% 20%; 
+			    grid-template-columns: 20% 20% 20% 20% 20%; 
+			    grid-template-areas: none; height: 90px;">
+			        <div class="grid grid--2" style="width: 0px; height: 0px; left: -18px; grid-template: repeat(5, 20%) / repeat(1, 100%);">
+			        </div>
+			        <div class="grid grid--3" style="width: 90px; height: 0px; top: 0px; grid-template: repeat(1, 100%) / repeat(5, 20%);">
+			        </div>     
+        		</div>
+    		</div>
+		</div>
+		<script src="js/html2canvas.js"></script>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="js/crossword.view.js"></script>
+	</body>
+</html>
