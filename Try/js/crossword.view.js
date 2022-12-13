@@ -144,6 +144,7 @@ $(function () {
 
     $(document).on('click', '.btn-clean', function () {
         $('.grid--1__item').removeClass('cb');
+        $('.grid--1__item').removeClass('cn');
         fillCross();
         // var goalParams = {crosswordID: cross_id};
         // ym(50704990, 'reachGoal', 'CROSSWORD_VIEW_CLEAR', goalParams);
