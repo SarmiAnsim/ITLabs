@@ -144,10 +144,19 @@ $(function () {
 
     $(document).on('click', '.btn-clean', function () {
         $('.grid--1__item').removeClass('cb');
-        $('.grid--1__item').removeClass('cn');
+        $('.grid__item').removeClass('cn');
+
+        hint.w.forEach(function (items, i) {
+            items.forEach(function (item, j){
+                hint.w[i][j] = Math.abs(hint.w[i][j]);
+            })
+        })
+        hint.h.forEach(function (items, i) {
+            items.forEach(function (item, j){
+                hint.h[i][j] = Math.abs(hint.h[i][j]);
+            })
+        })
         fillCross();
-        // var goalParams = {crosswordID: cross_id};
-        // ym(50704990, 'reachGoal', 'CROSSWORD_VIEW_CLEAR', goalParams);
     });
 
 
@@ -165,8 +174,6 @@ $(function () {
         } catch {
             alert("Кросворд решен неверно!");
         }
-        // var goalParams = {crosswordID: cross_id};
-        // ym(50704990, 'reachGoal', 'CROSSWORD_VIEW_CHECK', goalParams);
     });
 
     $(document).on('click', '.btn-save', function () {
@@ -175,8 +182,6 @@ $(function () {
         //         alert(data);
         //     }
         // });
-        // var goalParams = {crosswordID: cross_id};
-        // ym(50704990, 'reachGoal', 'CROSSWORD_VIEW_SAVE', goalParams);
         crossExport = {
             crossData: cross,
             solveCrossData: crossImported.solveCrossData,
