@@ -80,6 +80,16 @@ $(function () {
         //console.log('Заполнение массива пустыми значениями', cross);
     }
 
+    $('#crossword-ivert').click(function () {
+        for (let i = 0; i < crossH; i++) {
+            for (let j = 0; j < crossW; j++) {
+                cross[i][j] = (cross[i][j] + 1)%2;
+            }
+        }
+        generateCrossword();
+        generateHint();
+    });
+
     $(document).on('mousedown', '.grid--1__item', function () {
         is_dragging = true;
         if ($(this).hasClass('cb')) {
@@ -143,6 +153,10 @@ $(function () {
             for (let j = 0; j < crossW; j++) {
 
                 $class = [];
+
+                if (cross[i][j] === 1) {
+                    $class.push('cb');
+                }
 
                 if (j === 0) {
                     $class.push('blb');
