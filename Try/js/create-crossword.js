@@ -21,6 +21,8 @@ $(function () {
     generateCrossword();
 
     $('#cWidth, #crossword-width').change(function () {
+        if (!parseInt($(this).val()))
+            $(this).val(0);
         crossW = parseInt($(this).val());
         grid1.width(crossW * cellW);
         fillCross();
@@ -29,6 +31,8 @@ $(function () {
     });
 
     $('#cHeight, #crossword-height').change(function () {
+        if (!parseInt($(this).val()))
+            $(this).val(0);
         crossH = parseInt($(this).val());
         grid1.height(crossH * cellH);
         fillCross();
@@ -88,6 +92,8 @@ $(function () {
         }
         generateCrossword();
         generateHint();
+        $(this).toggleClass('btn-light');
+        $(this).toggleClass('btn-dark');
     });
 
     $(document).on('mousedown', '.grid--1__item', function () {

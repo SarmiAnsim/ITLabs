@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/-96x88.png" type="image/x-icon">
   <meta name="description" content="">
-  
   
   <title>Создать</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
@@ -22,15 +21,10 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bellota+Text:300,300i,400,400i,700,700i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
-  
-  
-  
 </head>
 <body>
   
   <section data-bs-version="5.1" class="menu menu1 cid-tqzZsphA8h" once="menu" id="menu1-a">
-    
-
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
             <div class="navbar-brand">
@@ -64,8 +58,6 @@
 
 <section data-bs-version="5.1" class="image3 cid-tqAtYFjG8h mbr-parallax-background" id="image3-b">
     
-
-    
     <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(255, 255, 255);">
     </div>
 
@@ -73,20 +65,27 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-7">
                 <div class="image-wrapper">
-                    <div>
-            <input type="text" id="cWidth" value="5"> <br>
-            <input type="text" id="cHeight" value="5"> <br>
-            <input type="text" id="cName" value="Мой кроссворд"> <br>
-            <button id="crossword-ivert">
-                Инвертировать кроссворд
-            </button>
-            <button id="crossword-download">
-                Скачать кроссворд
-            </button>
-            <button id="crossword-screenshot-download">
-                Экспортировать кроссворд
-            </button>
-            <div class="grid-wrap grid-crossword-screen" style="padding-top: 0px; padding-left: 0px;">
+                    <div style="display: grid;">
+                        <link href="try/css/style.css" rel="stylesheet">
+            <div  style="margin: auto;">
+                <span class="input-prepend">Ширина:</span><input type="number" id="cWidth" value="5" style="padding: 3px;"> <br>
+            </div><br>
+            <div  style="margin: auto;">
+                <span class="input-prepend">Высота:</span><input type="number" id="cHeight" value="5" style="padding: 3px;"> <br>
+            </div><br>
+            <div style="margin: auto;">
+                <span class="input-prepend">Название:</span><input type="text" id="cName" style="padding: 3px;" value="Мой сканворд" > <br>
+            </div><br>
+            <button id="crossword-ivert" class="btn btn-light btn-md rounded-0" style="margin: auto;">
+                Инвертировать сканворд
+            </button> <br>
+            <button id="crossword-download" class="btn btn-primary btn-light btn-md rounded-0" style="margin: auto;">
+                Скачать сканворд
+            </button> <br>
+            <!-- <button id="crossword-screenshot-download" class="btn btn-success btn-md rounded-0" style="margin: auto;">
+                Экспортировать сканворд
+            </button> <br> -->
+            <div class="grid-wrap grid-crossword-screen" style="padding-top: 0px; padding-right: auto;">
                 <div class="grid grid--1" style="width: 90px; 
                 grid-template-rows: 20% 20% 20% 20% 20%; 
                 grid-template-columns: 20% 20% 20% 20% 20%; 
@@ -99,9 +98,9 @@
             </div> <br>
             <div class="crossword-screenshot"></div>
         </div>
-        <script src="js/html2canvas.js"></script>
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-        <script src="js/create-crossword.js"></script
+        <script src="try/js/html2canvas.js"></script>
+        <script src="try/node_modules/jquery/dist/jquery.js"></script>
+        <script src="try/js/create-crossword.js"></script
                 </div>
             </div>
         </div>

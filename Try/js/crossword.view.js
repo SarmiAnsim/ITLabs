@@ -160,7 +160,7 @@ $(function () {
     });
 
 
-    $(document).on('click', '.btn-check', function () {
+    $(document).on('click', '.btn-success', function () {
         try {
             for (var i = 0; i < crossH; i++) {
                 for (var j = 0; j < crossW; j++) {
@@ -177,11 +177,6 @@ $(function () {
     });
 
     $(document).on('click', '.btn-save', function () {
-        // $.post('/crossword/save/' + cross_id + '/', {crossword: JSON.stringify(cross)}, function (data) {
-        //     if (data !== '') {
-        //         alert(data);
-        //     }
-        // });
         crossExport = {
             crossData: cross,
             solveCrossData: crossImported.solveCrossData,
@@ -280,7 +275,9 @@ $(function () {
 
         $('.grid-wrap').css({
             'padding-top': hH * cellH + 'px',
-            'padding-left': hW * cellW + 'px'
+            'padding-left': hW * cellW + 'px',
+            'height': (cross.length + hH) * cellH + 'px',
+            'width': (cross[0].length + hW) * cellW + 'px'
         });
 
         $item = 1;
