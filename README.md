@@ -56,3 +56,5 @@
 
 Распределение ролей также показано в Google-таблице:
 [Кондуит ИДМ-22](https://docs.google.com/spreadsheets/d/1ypxgDUpNsaAK5PH90dTfGKdtDnWaeEDWfupEbDokN6A/edit?usp=sharing)
+
+Заявка на участие в [конкурсе](https://idmit.ru) подана. Конкурсная группа - Развлечения.
