@@ -198,3 +198,11 @@
    background-color: rgba(255, 255, 255, 0.7);
    padding: 6px;
  } 
+
+ .blink {
+   animation: blink 3s infinite;
+ }
+ @keyframes blink {
+   from { opacity: 1;}
+   to { opacity: 0;}
+ }
