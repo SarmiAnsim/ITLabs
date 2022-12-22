@@ -275,8 +275,8 @@ $(function () {
 
         $('.grid-wrap').css({
             'padding-top': hH * cellH + 'px',
-            'padding-left': hW * cellW + 'px',
-            'height': (cross.length + hH) * cellH + 'px',
+            //'padding-left': hW * cellW + 'px',
+            //'height': (cross.length + hH) * cellH + 'px',
             'width': (cross[0].length + hW) * cellW + 'px'
         });
 
